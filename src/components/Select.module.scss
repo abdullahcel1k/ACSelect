@@ -1,0 +1,98 @@
+.selectContainer {
+  width: 400px;
+  max-width: 400px;
+  .selectInputContainer {
+    display: flex;
+    background-color: white;
+    border: 1px solid #a1aec0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    max-width: 400px;
+    .openOptionsModal::before {
+      content: "\25be";
+      float: right;
+      color: gray;
+      width: 20px;
+      height: 20px;
+    }
+    .selectedItems {
+      display: flex;
+      margin-right: 0.5rem;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .selectedItem {
+        background-color: #e2e8f0;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        .selectedItemLabel {
+          color: black;
+        }
+        .selectedItemDelete {
+          color: white;
+          margin-left: 0.1rem;
+          background-color: #94a3b8;
+          padding: 0.2rem;
+          border-radius: 0.3rem;
+          cursor: pointer;
+        }
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      width: inherit;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      margin: auto 0;
+      margin-left: auto;
+    }
+  }
+  .selectOptions {
+    display: none;
+    list-style: none;
+    border: 1px solid #a1aec0;
+    border-radius: 1rem;
+    padding: 0;
+    height: 240px;
+    overflow: auto;
+    margin-top: 0.5rem;
+
+    .selectOptionsItem {
+      display: flex;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 0.5rem;
+      }
+      .selectOptionsLabel {
+        margin-left: 0.5rem;
+      }
+    }
+
+    li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #a1aec0;
+      &:last-child {
+        border: none !important;
+      }
+      &:hover {
+        background-color: #94a3b8;
+      }
+    }
+
+    .highlighted {
+      background-color: #94a3b8;
+    }
+  }
+
+  .selectOptions.show {
+    display: block;
+  }
+}
