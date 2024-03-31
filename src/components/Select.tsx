@@ -1,4 +1,4 @@
-import React, { useState, FC, useEffect, useRef, KeyboardEvent } from "react";
+import { useState, FC, useEffect, useRef, KeyboardEvent } from "react";
 import styles from "./Select.module.scss";
 import { Character } from "../core/models";
 
