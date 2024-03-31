@@ -1,6 +1,10 @@
 .selectContainer {
   width: 400px;
   max-width: 400px;
+
+  .selectLabel {
+    font-size: 1.5rem;
+  }
   .selectInputContainer {
     display: flex;
     background-color: white;
@@ -8,6 +12,7 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     max-width: 400px;
+    margin-top: 0.3rem;
     .openOptionsModal::before {
       content: "\25be";
       float: right;

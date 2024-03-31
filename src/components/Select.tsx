@@ -125,6 +125,7 @@ const Select: FC<SelectProps> = ({ options, optionsRequest }) => {
 
   return _options ? (
     <div className={styles.selectContainer}>
+      <label className={styles.selectLabel}>Select Your Character</label>
       <div className={styles.selectInputContainer}>
         <div className={styles.selectedItems}>
           {selectedItems.map((item: Character) => (
